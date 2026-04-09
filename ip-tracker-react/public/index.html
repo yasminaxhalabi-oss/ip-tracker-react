@@ -4,17 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/images/favicon-32x32.png">
 
-  <title>Frontend Mentor | IP Address Tracker</title>
+  <title>IP Address Tracker</title>
 
+  <!-- CSS של React (מובנה ב-build) -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/static/css/main.css">
   <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: hsl(0, 0%, 95%);
+    }
+    .attribution { 
+      font-size: 0.6875rem; 
+      text-align: center; 
+      margin-top: 20px;
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-  <!-- React “ידביק” את האפליקציה פה -->
+  <!-- React App יידבק כאן -->
   <div id="root"></div>
+
+  <!-- React JS Bundle (מגיע אוטומטית מ-build) -->
+  <script src="%PUBLIC_URL%/static/js/main.js"></script>
 </body>
 </html>
